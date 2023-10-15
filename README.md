@@ -55,3 +55,6 @@ source .vaultrc
 vault status
 ```
 
+#### Unknonw Issue
+1. Configuring Gossip Encryption
+2. Use the same key in every Consul Compoment
