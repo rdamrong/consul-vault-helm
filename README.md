@@ -12,15 +12,24 @@ kubectl get nodes
 ```
 2. create pv
 ```
+#- My Home
 cd /Users/drs/Dropbox/01-Kubernetes/scenario/vaultproject/helm
 kubectl apply -f pv.yaml
+
+#- For Friends
+git clone https://github.com/rdamrong/consul-vault-helm.git
+cd consul-vault-helm
+kubectl apply -f pv.yaml
+
 ```
 3. Create Secret
 ```
 kubectl create ns vault
+kubectl -n vault create secret generic consul-gossip-key --from-literal=key='UXtObIAKDo7gfV07++izEB8Va7pBsG5YkzS5LaqNTlg='
+#- Gossip Key generated from command 'consul keygen'
 kubectl -n vault create secret tls tls-server --cert ./pki/server1.crt --key ./pki/server1.key
 kubectl -n vault create secret tls tls-ca --cert ./pki/ca.crt --key ./pki/ca.key
-#kubectl -n vault create secret tls consul-consul-connect-inject-webhook-cert --cert ./pki/consul.crt --key ./pki/consul.key
+#- kubectl -n vault create secret tls consul-consul-connect-inject-webhook-cert --cert ./pki/consul.crt --key ./pki/consul.key
 kubectl -n vault create secret tls tls-consul --cert ./pki/consul.crt --key ./pki/consul.key
 kubectl -n vault create secret tls  client-tls-init  --cert ./pki/consul.crt --key ./pki/consul.key
 ```
@@ -56,5 +65,5 @@ vault status
 ```
 
 #### Unknonw Issue
-1. Configuring Gossip Encryption
+1. ~~Configuring Gossip Encryption~~ Solved, Sun 15 Oct 2023
 2. Use the same key in every Consul Compoment

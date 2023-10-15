@@ -1,6 +1,10 @@
 global:
   enabled: true
+  enableAutoEncrypt: true
   datacenter: dc1
+  gossipEncryption:
+    secretName: consul-gossip-key
+    secretKey: key
   tls:
     enabled: true
     caCert:
