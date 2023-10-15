@@ -1,0 +1,2 @@
+export VAULT_ADDR=https://vault.d8k.lo:30200
+export VAULT_CACERT=$(pwd)/pki/ca.crt

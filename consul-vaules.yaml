@@ -1,0 +1,21 @@
+global:
+  enabled: true
+  datacenter: dc1
+  tls:
+    enabled: true
+    caCert:
+      secretName: "tls-ca"
+    caKey:
+      secretName: "tls-ca"
+    
+
+client:
+  enabled: true
+
+server:
+  serverCert:
+    secretName: "tls-consul"
+  replicas: 3
+  bootstrapExpect: 3
+  disruptionBudget:
+    maxUnavailable: 0

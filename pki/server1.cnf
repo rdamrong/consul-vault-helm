@@ -1,0 +1,2 @@
+subjectAltName = DNS:vault.d8k.lo,DNS:vault,DNS:vault.vault.svc.cluster.local,DNS:vault.vault.svc,DNS:localhost,IP:127.0.0.1
+extendedKeyUsage = serverAuth

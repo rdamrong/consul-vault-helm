@@ -1,0 +1,140 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-data1
+  namespace: vault
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  mountOptions:
+    - hard
+    - nfsvers=4.1
+  nfs:
+    path: /data/student0/storage1
+    server: nfs.d8k.lo
+...
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-data2
+  namespace: vault
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  mountOptions:
+    - hard
+    - nfsvers=4.1
+  nfs:
+    path: /data/student0/storage2
+    server: nfs.d8k.lo
+...
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-data3
+  namespace: vault
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  mountOptions:
+    - hard
+    - nfsvers=4.1
+  nfs:
+    path: /data/student0/storage3
+    server: nfs.d8k.lo
+...
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-data4
+  namespace: vault
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  mountOptions:
+    - hard
+    - nfsvers=4.1
+  nfs:
+    path: /data/student0/storage4
+    server: nfs.d8k.lo
+...
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-data5
+  namespace: vault
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  mountOptions:
+    - hard
+    - nfsvers=4.1
+  nfs:
+    path: /data/student0/storage5
+    server: nfs.d8k.lo
+...
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-data6
+  namespace: vault
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  mountOptions:
+    - hard
+    - nfsvers=4.1
+  nfs:
+    path: /data/student0/storage6
+    server: nfs.d8k.lo
+...
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-data7
+  namespace: vault
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  mountOptions:
+    - hard
+    - nfsvers=4.1
+  nfs:
+    path: /data/student0/storage7
+    server: nfs.d8k.lo
+...

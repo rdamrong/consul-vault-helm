@@ -1,0 +1,2 @@
+subjectAltName = DNS:consul-consul-server,DNS:consul-consul-server.vault.svc,DNS:consul-consul-server.vault.svc.cluster.local,DNS:server.dc1.consul,DNS:consul,DNS:consul.vault.svc.cluster.local,DNS:consul.vault.svc,DNS:localhost,IP:127.0.0.1
+extendedKeyUsage = serverAuth,clientAuth
